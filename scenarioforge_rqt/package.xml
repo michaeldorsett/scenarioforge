@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>scenarioforge_rqt</name>
+  <version>0.0.0</version>
+  <description>RQt operator panel for ScenarioForge SO-101 teleop control</description>
+  <maintainer email="michaeldorsett14@gmail.com">Michael Dorsett</maintainer>
+  <license>TODO: License declaration</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <depend>rclpy</depend>
+  <depend>std_srvs</depend>
+  <depend>rqt_gui</depend>
+  <depend>rqt_gui_py</depend>
+  <depend>python_qt_binding</depend>
+  <depend>qt_gui</depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <rqt_gui plugin="${prefix}/plugin.xml"/>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<library path="src">
+  <class
+      name="scenarioforge_rqt/TeleopPanel"
+      type="scenarioforge_rqt.teleop_panel.TeleopPanel"
+      base_class_type="rqt_gui_py::Plugin">
+    <description>
+      ScenarioForge teleoperation control panel
+    </description>
+    <qtgui>
+      <label>ScenarioForge Teleop Panel</label>
+      <icon type="theme">applications-system</icon>
+      <statustip>Start, stop, and monitor SO-101 teleoperation</statustip>
+    </qtgui>
+  </class>
+</library>
