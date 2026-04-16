@@ -36,7 +36,7 @@ So far, the project includes:
 
 ## Project Goal
 
-The long-term vision for ScenarioForge is to evolve beyond basic teleoperation and become a **robotics validation framework** with support for:
+The long-term vision for ScenarioForge is to evolve beyond basic teleoperation and become a **robotics implementation/validation framework** with support for:
 
 - scenario definitions (YAML/JSON)
 - repeatable execution
@@ -47,7 +47,7 @@ The long-term vision for ScenarioForge is to evolve beyond basic teleoperation a
 - artifact generation
 - mock/sim backends later
 
-The current ROS + RQt control layer is the first step toward that larger system.
+The current ROS + RQt control layer is the first step toward that developing the larger system.
 
 ---
 
@@ -58,7 +58,7 @@ ROS 2 backend package responsible for:
 
 - exposing teleoperation control services
 - launching/stopping LeRobot commands
-- reporting teleop status
+- reporting realtime teleop status
 
 ### 2. `scenarioforge_rqt`
 RQt operator panel responsible for:
@@ -66,6 +66,7 @@ RQt operator panel responsible for:
 - starting teleoperation
 - stopping teleoperation
 - refreshing teleop status
+- more to come. 
 
 ### 3. LeRobot
 LeRobot is used as the robot control layer for the SO-101.  
@@ -138,9 +139,9 @@ ScenarioForge currently wraps the existing LeRobot teleoperation workflow rather
 
 ---
 
-## Why This Project Matters
+## Why This Project Matters to me
 
-ScenarioForge is designed as a portfolio project for roles related to:
+ScenarioForge is designed as a portfolio project to help refine my skills in roles like:
 
 - robotics software
 - autonomy validation
